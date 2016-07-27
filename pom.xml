@@ -4,7 +4,7 @@
   <groupId>SpringMVC</groupId>
   <artifactId>SpringMVC</artifactId>
   <packaging>war</packaging>
-  <version>2.0</version>
+  <version>1.0</version>
   <name>SpringMVC Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
@@ -38,13 +38,11 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<dependency>
-		<groupId>javax.servlet.jsp</groupId>
-		<artifactId>jsp-api</artifactId>
-		<version>2.1</version>
-		<scope>provided</scope>
-		</dependency>
- 
+ <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
  
   </dependencies>
   <build>
@@ -64,7 +62,7 @@
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>exec-maven-plugin</artifactId>
     <version>1.1.1</version>
-    <executions>
+<!--     <executions>
       <execution>
         <id>some-execution</id>
         <phase>compile</phase>
@@ -74,8 +72,8 @@
       </execution>
     </executions>
     <configuration>
-      <executable>C:\Work\Jenkins\Apache Tomcat\bin\startup.bat</executable>
-    </configuration>
+      <executable>D:/Naga/Softwares/Apache Tomcat/bin/startup.bat</executable>
+    </configuration> -->
   </plugin>
     	
     </plugins>
